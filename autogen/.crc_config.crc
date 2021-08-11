@@ -1,0 +1,21 @@
+#CRC Codes for initially generated config files -- do not modify!
+app_assert_config.h=1403752307
+btconf/gatt_configuration.btconf=1170408657
+btconf/ota_dfu.xml=512938454
+mbedtls_config.h=-1670505928
+nvm3_default_config.h=44458093
+psa_crypto_config.h=1484633667
+sl_bluetooth_config.h=421253583
+sl_device_init_dcdc_config.h=-870566101
+sl_device_init_emu_config.h=622680131
+sl_device_init_hfxo_config.h=1133380573
+sl_device_init_lfrco_config.h=-1106719712
+sl_hfxo_manager_config.h=415033866
+sl_i2cspm_BME680_config.h=-578747025
+sl_i2cspm_bme680_sensor_config.h=-1282728904
+sl_memory_config.h=503032768
+sl_power_manager_config.h=-1475773310
+sl_rail_util_pa_config.h=-2122058088
+sl_rail_util_pti_config.h=1408563987
+sl_simple_led_LED0_config.h=-1235176080
+sl_sleeptimer_config.h=-1879962229
