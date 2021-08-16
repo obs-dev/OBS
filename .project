@@ -214,6 +214,11 @@
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_system.h</locationURI>
 		</link>
 		<link>
+			<name>gecko_sdk_3.1.1/platform/emlib/inc/em_usart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_usart.h</locationURI>
+		</link>
+		<link>
 			<name>gecko_sdk_3.1.1/platform/emlib/inc/em_version.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/inc/em_version.h</locationURI>
@@ -272,6 +277,11 @@
 			<name>gecko_sdk_3.1.1/platform/emlib/src/em_system.c</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_system.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/emlib/src/em_usart.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/emlib/src/em_usart.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_3.1.1/protocol/bluetooth/inc/bg_gattdb_def.h</name>
@@ -337,6 +347,21 @@
 			<name>gecko_sdk_3.1.1/app/common/util/app_assert/sl_app_assert.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/app/common/util/app_assert/sl_app_assert.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/app/common/util/app_log/app_log.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/app/common/util/app_log/app_log.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/app/common/util/app_log/app_log.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/app/common/util/app_log/app_log.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/app/common/util/app_log/sl_app_log.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/app/common/util/app_log/sl_app_log.h</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_3.1.1/platform/common/toolchain/inc/sl_gcc_preinclude.h</name>
@@ -537,6 +562,46 @@
 			<name>gecko_sdk_3.1.1/platform/service/hfxo_manager/src/sli_hfxo_manager_internal.h</name>
 			<type>1</type>
 			<locationURI>STUDIO_SDK_LOC/platform/service/hfxo_manager/src/sli_hfxo_manager_internal.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/service/iostream/inc/sl_iostream.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/service/iostream/inc/sl_iostream_uart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_uart.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/service/iostream/inc/sl_iostream_usart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sl_iostream_usart.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/service/iostream/inc/sli_iostream_uart.h</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/inc/sli_iostream_uart.h</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/service/iostream/src/sl_iostream.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/service/iostream/src/sl_iostream_retarget_stdio.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_retarget_stdio.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/service/iostream/src/sl_iostream_uart.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_uart.c</locationURI>
+		</link>
+		<link>
+			<name>gecko_sdk_3.1.1/platform/service/iostream/src/sl_iostream_usart.c</name>
+			<type>1</type>
+			<locationURI>STUDIO_SDK_LOC/platform/service/iostream/src/sl_iostream_usart.c</locationURI>
 		</link>
 		<link>
 			<name>gecko_sdk_3.1.1/platform/service/mpu/inc/sl_mpu.h</name>

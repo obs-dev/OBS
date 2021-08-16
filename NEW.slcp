@@ -20,17 +20,19 @@ include:
 sdk: {id: gecko_sdk, version: 3.1.1}
 toolchain_settings: []
 component:
+- {id: app_log}
 - {id: bluetooth_feature_connection}
 - {id: bluetooth_feature_gatt_server}
 - {id: bluetooth_feature_advertiser}
 - {id: bluetooth_feature_sm}
 - {id: BGM220PC22WGA}
 - {id: mpu}
+- {id: iostream_usart_core}
 - {id: bluetooth_feature_system}
 - {id: gatt_configuration}
-- {id: bluetooth_feature_scanner}
 - instance: [BME680]
   id: i2cspm
+- {id: bluetooth_feature_scanner}
 - instance: [LED0]
   id: simple_led
 - {id: bluetooth_stack}

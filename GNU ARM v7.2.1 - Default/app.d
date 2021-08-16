@@ -58,10 +58,16 @@ app.o: ../app.c \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\bgm22\include\bgm22_dma_descriptor.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\device\siliconlabs\bgm22\include\bgm22_ldmaxbar_defines.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_assert\sl_app_assert.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_assert\app_assert.h \
  D:\Microart\NEW\autogen/sl_component_catalog.h \
  D:\Microart\NEW\config/app_assert_config.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_status.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_log\app_log.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\iostream\inc\sl_iostream.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h \
+ D:\Microart\NEW\autogen/sl_iostream_handles.h \
+ D:\Microart\NEW\config/app_log_config.h \
  D:\Microart\NEW\autogen/sl_bluetooth.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\power_manager\inc\sl_power_manager.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
@@ -70,7 +76,6 @@ app.o: ../app.c \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h \
  D:\Microart\NEW\config/sl_sleeptimer_config.h \
- d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_emu.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_bus.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
@@ -218,6 +223,8 @@ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\device\sil
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h:
 
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_assert\sl_app_assert.h:
+
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_assert\app_assert.h:
 
 D:\Microart\NEW\autogen/sl_component_catalog.h:
@@ -225,6 +232,16 @@ D:\Microart\NEW\autogen/sl_component_catalog.h:
 D:\Microart\NEW\config/app_assert_config.h:
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_status.h:
+
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_log\app_log.h:
+
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\iostream\inc\sl_iostream.h:
+
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h:
+
+D:\Microart\NEW\autogen/sl_iostream_handles.h:
+
+D:\Microart\NEW\config/app_log_config.h:
 
 D:\Microart\NEW\autogen/sl_bluetooth.h:
 
@@ -241,8 +258,6 @@ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h:
 
 D:\Microart\NEW\config/sl_sleeptimer_config.h:
-
-d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h:
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_emu.h:
 

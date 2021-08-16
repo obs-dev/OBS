@@ -87,6 +87,10 @@ gecko_sdk_3.1.1/app/bluetooth/common/ota_dfu/sl_ota_dfu.o: \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\protocol\bluetooth\inc\bg_gattdb_def.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_assert\app_assert.h \
  D:\Microart\NEW\config/app_assert_config.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_log\app_log.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\iostream\inc\sl_iostream.h \
+ D:\Microart\NEW\autogen/sl_iostream_handles.h \
+ D:\Microart\NEW\config/app_log_config.h \
  D:/Simplicity\ Studio\ 5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/ota_dfu/sl_ota_dfu.h
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\toolchain\inc\sl_gcc_preinclude.h:
@@ -262,5 +266,13 @@ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\protocol\bluetooth\
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_assert\app_assert.h:
 
 D:\Microart\NEW\config/app_assert_config.h:
+
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_log\app_log.h:
+
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\iostream\inc\sl_iostream.h:
+
+D:\Microart\NEW\autogen/sl_iostream_handles.h:
+
+D:\Microart\NEW\config/app_log_config.h:
 
 D:/Simplicity\ Studio\ 5/developer/sdks/gecko_sdk_suite/v3.1/app/bluetooth/common/ota_dfu/sl_ota_dfu.h:

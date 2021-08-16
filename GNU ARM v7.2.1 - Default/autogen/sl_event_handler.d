@@ -84,12 +84,16 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\pa-conversions\pa_curve_types_efr32.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\radio\rail_lib\plugin\rail_util_pti\sl_rail_util_pti.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sleeptimer\inc\sl_sleeptimer.h \
- D:\Microart\NEW\config/sl_sleeptimer_config.h ../autogen/sl_bluetooth.h \
+ D:\Microart\NEW\config/sl_sleeptimer_config.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_log\app_log.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\iostream\inc\sl_iostream.h \
+ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h \
+ D:\Microart\NEW\autogen/sl_iostream_handles.h \
+ D:\Microart\NEW\config/app_log_config.h ../autogen/sl_bluetooth.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\power_manager\inc\sl_power_manager.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_core.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_slist.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h \
- d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_emu.h \
  D:\Microart\NEW\config/sl_bluetooth_config.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\protocol\bluetooth\inc\sl_bt_stack_config.h \
@@ -101,6 +105,7 @@ autogen/sl_event_handler.o: ../autogen/sl_event_handler.c \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\i2cspm\inc\sl_i2cspm.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_i2c.h \
+ ../autogen/sl_iostream_init_instances.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\crypto\sl_component\sl_alt\include\sl_mbedtls.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\mpu\inc\sl_mpu.h \
  d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emdrv\nvm3\inc\nvm3_default.h \
@@ -286,6 +291,16 @@ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\sl
 
 D:\Microart\NEW\config/sl_sleeptimer_config.h:
 
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\app\common\util\app_log\app_log.h:
+
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\iostream\inc\sl_iostream.h:
+
+d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h:
+
+D:\Microart\NEW\autogen/sl_iostream_handles.h:
+
+D:\Microart\NEW\config/app_log_config.h:
+
 ../autogen/sl_bluetooth.h:
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\service\power_manager\inc\sl_power_manager.h:
@@ -295,8 +310,6 @@ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_slist.h:
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_assert.h:
-
-d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\common\inc\sl_enum.h:
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_emu.h:
 
@@ -319,6 +332,8 @@ d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\driver\i2c
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_gpio.h:
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\platform\emlib\inc\em_i2c.h:
+
+../autogen/sl_iostream_init_instances.h:
 
 d:\simplicity\ studio\ 5\developer\sdks\gecko_sdk_suite\v3.1\util\third_party\crypto\sl_component\sl_alt\include\sl_mbedtls.h:
 
