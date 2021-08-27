@@ -16,6 +16,9 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Sensor_Files_BME680/BME680_API \
+Sensor_Files_BME680/BSEC_Library \
+Sensor_Files_BME680/BSEC_Library/generic_33v_3s_28d \
 . \
 autogen \
 gecko_sdk_3.1.1/app/bluetooth/common/ota_dfu \
