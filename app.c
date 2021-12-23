@@ -227,7 +227,6 @@ SL_WEAK void app_init(void)
    USTIMER_Init();
 
    //initialize RTCC and sleeptimer
-   CHIP_Init();
    CMU_ClockSelectSet(cmuClock_RTCCCLK, cmuSelect_LFRCO);
    CMU_ClockEnable(cmuClock_RTCC, true);
    sl_sleeptimer_init();
