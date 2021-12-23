@@ -5,9 +5,9 @@
 #ifndef __GATT_DB_H
 #define __GATT_DB_H
 
-#include "sli_bt_gattdb_def.h"
+#include "bg_gattdb_def.h"
 
-extern const sli_bt_gattdb_t gattdb;
+extern const struct bg_gattdb_def bg_gattdb_data;
 
 #define gattdb_service_changed_char           3
 #define gattdb_database_hash                  6

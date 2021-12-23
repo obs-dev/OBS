@@ -1,6 +1,6 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: OBS
-label: OBS
+project_name: NEW
+label: NEW
 description: |
   This example demonstrates the bare minimum needed for a Bluetooth C application that allows Over-the-Air Device Firmware Upgrading (OTA DFU). The application starts advertising after boot and restarts advertising after a connection is closed.
 category: Bluetooth Examples
@@ -17,7 +17,7 @@ include:
 - path: ''
   file_list:
   - {path: app.h}
-sdk: {id: gecko_sdk, version: 3.2.3}
+sdk: {id: gecko_sdk, version: 3.1.1}
 toolchain_settings: []
 component:
 - {id: app_log}

@@ -15,10 +15,10 @@
 #include "sl_bluetooth.h"
 #include "sl_i2cspm_instances.h"
 #include "sl_iostream_init_instances.h"
-#include "sl_iostream_stdlib_config.h"
 #include "sl_mbedtls.h"
 #include "sl_mpu.h"
 #include "nvm3_default.h"
+#include "sl_ram_interrupt_vector_init.h"
 #include "sl_simple_led_instances.h"
 #include "sl_power_manager.h"
 
@@ -37,6 +37,7 @@ void sl_platform_init(void)
   sl_device_init_clocks();
   sl_device_init_emu();
   nvm3_initDefault();
+  sl_ram_interrupt_vector_init();
   sl_power_manager_init();
 }
 
@@ -51,7 +52,6 @@ void sl_service_init(void)
   sl_sleeptimer_init();
   sl_hfxo_manager_init();
   sl_iostream_init_instances();
-  sl_iostream_stdlib_disable_buffering();
   sl_mbedtls_init();
   sl_mpu_disable_execute_from_ram();
 }

@@ -17,7 +17,10 @@
 
 #include "sl_simple_led.h"
 #include "em_gpio.h"
+
 #include "sl_simple_led_LED0_config.h"
+
+
 
 sl_simple_led_context_t simple_led0_context = {
   .port = SL_SIMPLE_LED_LED0_PORT,
@@ -34,11 +37,10 @@ const sl_led_t sl_led_led0 = {
   .get_state = sl_simple_led_get_state,
 };
 
-const sl_led_t *sl_simple_led_array[] = {
-  &sl_led_led0
-};
 
 void sl_simple_led_init_instances(void)
 {
+  
   sl_led_init(&sl_led_led0);
+  
 }

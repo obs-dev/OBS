@@ -6,14 +6,11 @@
 
 #ifdef SL_COMPONENT_CATALOG_PRESENT
 #include "sl_component_catalog.h"
-#include "sli_bt_gattdb_def.h"
-#ifdef SL_CATALOG_GATT_CONFIGURATION_PRESENT
-extern const sli_bt_gattdb_t gattdb;
-#else
-const sli_bt_gattdb_t gattdb = {0};
+#ifndef SL_CATALOG_GATT_CONFIGURATION_PRESENT
+#include "bg_gattdb_def.h"
+const struct bg_gattdb_def bg_gattdb_data = {0};
 #endif // SL_CATALOG_GATT_CONFIGURATION_PRESENT
 #endif // SL_COMPONENT_CATALOG_PRESENT
-
 #include "sl_ota_dfu.h"
 
 static const sl_bt_configuration_t config = SL_BT_CONFIG_DEFAULT;
@@ -30,25 +27,9 @@ static const struct sli_bgapi_class * const bt_class_table[] =
   SL_BT_BGAPI_CLASS(sm),
   NULL
 };
-#if !defined(SL_CATALOG_KERNEL_PRESENT)
-/**
- * Override @ref PendSV_Handler for the Link Layer task when Bluetooth runs
- * in baremetal mode. The override must not exist when Bluetooth runs in an RTOS
- * where the link layer task runs in a thread.
- */
-#include <em_device.h>
-void PendSV_Handler()
-{
-  sl_bt_priority_handle();
-}
-#endif
 
 void sl_bt_init(void)
 {
-#if !defined(SL_CATALOG_KERNEL_PRESENT)
-  NVIC_ClearPendingIRQ(PendSV_IRQn);
-  NVIC_EnableIRQ(PendSV_IRQn);
-#endif
   // Stack initialization could fail, e.g., due to out of memory.
   // The failure could not be returned to user yet as the system initialization
   // does not return an error code.

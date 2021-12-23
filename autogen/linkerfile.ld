@@ -27,11 +27,11 @@
  *
  ******************************************************************************/
 
- MEMORY
- {
-   FLASH   (rx)  : ORIGIN = 0x6000, LENGTH = 0x50000
-   RAM     (rwx) : ORIGIN = 0x20000000, LENGTH = 0x8000
- }
+MEMORY
+{
+  FLASH   (rx)  : ORIGIN = 0x6000, LENGTH = 0x50000
+  RAM     (rwx) : ORIGIN = 0x20000000, LENGTH = 0x8000
+}
 
 ENTRY(Reset_Handler)
 
@@ -170,9 +170,8 @@ SECTIONS
   } > RAM
 
   __heap_size = __HeapLimit - __HeapBase;
-  __main_flash_end__ = 0x6000 + 0x50000;
 
-   /* This is where we handle flash storage blocks. We use dummy sections for finding the configured
+  /* This is where we handle flash storage blocks. We use dummy sections for finding the configured
    * block sizes and then "place" them at the end of flash when the size is known. */
   .internal_storage (DSECT) : {
     KEEP(*(.internal_storage*))
@@ -182,11 +181,14 @@ SECTIONS
     KEEP(*(.simee*))
   } > FLASH
 
-  linker_nvm_end = __main_flash_end__;
+  linker_nvm_end = ORIGIN(FLASH) + LENGTH(FLASH);
   linker_nvm_begin = linker_nvm_end - SIZEOF(.nvm);
   linker_nvm_size = SIZEOF(.nvm);
   linker_storage_end = linker_nvm_begin;
   linker_storage_begin = linker_storage_end - SIZEOF(.internal_storage);
   linker_storage_size = SIZEOF(.internal_storage);
   __nvm3Base = linker_nvm_begin;
+
+  ASSERT( (ORIGIN(FLASH) + LENGTH(FLASH)) >= (__etext + SIZEOF(.data)), "FLASH memory overflowed !")
+  ASSERT( (ORIGIN(RAM) + LENGTH(RAM)) >= (__HeapBase + SIZEOF(.heap)), "RAM memory overflowed !")
 }
