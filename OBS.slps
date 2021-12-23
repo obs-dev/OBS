@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ASCII"?>
 <model:MDescriptors xmlns:model="http://www.silabs.com/ss/Studio.ecore">
-  <descriptors name="NEW">
-    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.super:3.1.2._-977330775"/>
-    <properties key="universalConfig.generationDirectory" value="D:\Microart\NEW"/>
+  <descriptors name="OBS">
+    <properties key="projectCommon.sdkId" value="com.silabs.sdk.stack.super:3.2.3._640221276"/>
+    <properties key="universalConfig.generationDirectory" value="C:\Users\gbeke\Documents\Uni Work\COOP\Microart Services Inc\Actual work stuff\OBS"/>
     <properties key="universalConfig.toolchainCompatibility" value="iar gcc"/>
     <properties key="projectCommon.boardIds" value="com.silabs.board.none:0.0.0"/>
     <properties key="projectCommon.partId" value="mcu.arm.efr32.bg22.bgm220pc22wga"/>

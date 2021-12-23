@@ -6,25 +6,12 @@
  * <b>Copyright 2021 Silicon Laboratories Inc. www.silabs.com</b>
  *******************************************************************************
  *
- * SPDX-License-Identifier: Zlib
- *
- * The licensor of this software is Silicon Laboratories Inc.
- *
- * This software is provided 'as-is', without any express or implied
- * warranty. In no event will the authors be held liable for any damages
- * arising from the use of this software.
- *
- * Permission is granted to anyone to use this software for any purpose,
- * including commercial applications, and to alter it and redistribute it
- * freely, subject to the following restrictions:
- *
- * 1. The origin of this software must not be misrepresented; you must not
- *    claim that you wrote the original software. If you use this software
- *    in a product, an acknowledgment in the product documentation would be
- *    appreciated but is not required.
- * 2. Altered source versions must be plainly marked as such, and must not be
- *    misrepresented as being the original software.
- * 3. This notice may not be removed or altered from any source distribution.
+ * The licensor of this software is Silicon Laboratories Inc. Your use of this
+ * software is governed by the terms of Silicon Labs Master Software License
+ * Agreement (MSLA) available at
+ * www.silabs.com/about-us/legal/master-software-license-agreement. This
+ * software is distributed to you in Source Code format and is governed by the
+ * sections of the MSLA applicable to Source Code.
  *
  ******************************************************************************/
 
@@ -35,81 +22,24 @@
 
 // <<< Use Configuration Wizard in Context Menu >>>
 
-#define APP_LOG_NEW_LINE_N                    "\n"
-#define APP_LOG_NEW_LINE_R                    "\r"
-#define APP_LOG_NEW_LINE_RN                   "\r\n"
-
 // <e APP_LOG_ENABLE> Application Logging
 // <i> Enables Logging.
 #define APP_LOG_ENABLE            1
 
-// <h> General
+// <h> Filter and trace
 
-// <q APP_LOG_TRACE_ENABLE> Trace
-// <i> Enables printing file, line and function information.
-#define APP_LOG_TRACE_ENABLE      0
-
-// <q APP_LOG_TIME_ENABLE> Timestamp
-// <i> Enables printing timestamp
-#define APP_LOG_TIME_ENABLE                     0
-
-// <q APP_LOG_COUNTER_ENABLE> Counter
-// <i> Enables printing counter
-#define APP_LOG_COUNTER_ENABLE                  0
-
-// <o APP_LOG_NEW_LINE> Line ending
-// <APP_LOG_NEW_LINE_N=> "\n"
-// <APP_LOG_NEW_LINE_R=> "\r"
-// <APP_LOG_NEW_LINE_RN=> "\r\n"
-// <i> Default: APP_LOG_NEW_LINE_N
-#define APP_LOG_NEW_LINE                        APP_LOG_NEW_LINE_N
-
-#define APP_LOG_AUTO_NL                         0
-
-// </h>
-
-// <h> Log level filtering
-
-// <e APP_LOG_LEVEL_FILTER_ENABLE> Threshold filter
-// <i> Enable simple filter for log levels
-#define APP_LOG_LEVEL_FILTER_ENABLE            1
-
-// <o APP_LOG_LEVEL_FILTER_THRESHOLD> Threshold
+// <o APP_LOG_LEVEL> Level
 // <APP_LOG_LEVEL_DEBUG=> DEBUG
 // <APP_LOG_LEVEL_INFO=> INFO
 // <APP_LOG_LEVEL_WARNING=> WARNING
 // <APP_LOG_LEVEL_ERROR=> ERROR
 // <APP_LOG_LEVEL_CRITICAL=> CRITICAL
 // <i> Default: DEBUG
-#define APP_LOG_LEVEL_FILTER_THRESHOLD              APP_LOG_LEVEL_DEBUG
+#define APP_LOG_LEVEL              APP_LOG_LEVEL_DEBUG
 
-// </e>
-
-// <e APP_LOG_LEVEL_MASK_ENABLE> Mask filter
-// <i> Enable mask for log levels
-#define APP_LOG_LEVEL_MASK_ENABLE            0
-
-// <q APP_LOG_LEVEL_MASK_DEBUG> DEBUG
-// <i> Enable mask entry for log DEBUG
-#define APP_LOG_LEVEL_MASK_DEBUG             1
-
-// <q APP_LOG_LEVEL_MASK_INFO> INFO
-// <i> Enable mask entry for log INFO
-#define APP_LOG_LEVEL_MASK_INFO             1
-
-// <q APP_LOG_LEVEL_MASK_WARNING> WARNING
-// <i> Enable mask entry for log WARNING
-#define APP_LOG_LEVEL_MASK_WARNING             1
-
-// <q APP_LOG_LEVEL_MASK_ERROR> ERROR
-// <i> Enable mask entry for log ERROR
-#define APP_LOG_LEVEL_MASK_ERROR             1
-
-// <q APP_LOG_LEVEL_MASK_CRITICAL> CRITICAL
-// <i> Enable mask entry for log CRITICAL
-#define APP_LOG_LEVEL_MASK_CRITICAL             1
-
-// </e>
+// <q APP_LOG_TRACE_ENABLE> Trace
+// <i> Enables printing file, line and function information.
+#define APP_LOG_TRACE_ENABLE      0
 
 // </h>
 
