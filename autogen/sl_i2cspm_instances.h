@@ -26,9 +26,11 @@ extern "C" {
 
 
 #define SL_I2CSPM_BME680_PRESENT
+#define SL_I2CSPM_INST1_PRESENT
 
 
 extern sl_i2cspm_t *sl_i2cspm_BME680;
+extern sl_i2cspm_t *sl_i2cspm_inst1;
 
 void sl_i2cspm_init_instances(void);
 

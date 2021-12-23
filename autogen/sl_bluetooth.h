@@ -7,6 +7,8 @@
 #include "sl_bt_api.h"
 #define SL_BT_COMPONENT_ADVERTISERS 0
 
+#define SL_BT_COMPONENT_CONNECTIONS 0
+
 // Initialize Bluetooth core functionality
 void sl_bt_init(void);
 

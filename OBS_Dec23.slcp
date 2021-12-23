@@ -1,6 +1,6 @@
 # Silicon Labs Project Configuration Tools: slcp, v0, Component selection file.
-project_name: NEW
-label: NEW
+project_name: OBS_Dec23
+label: OBS_Dec23
 description: |
   This example demonstrates the bare minimum needed for a Bluetooth C application that allows Over-the-Air Device Firmware Upgrading (OTA DFU). The application starts advertising after boot and restarts advertising after a connection is closed.
 category: Bluetooth Examples
@@ -17,31 +17,40 @@ include:
 - path: ''
   file_list:
   - {path: app.h}
-sdk: {id: gecko_sdk, version: 3.1.1}
+sdk: {id: gecko_sdk, version: 3.2.3}
 toolchain_settings: []
 component:
-- {id: app_log}
-- {id: bluetooth_feature_connection}
 - {id: bluetooth_feature_gatt_server}
-- {id: bluetooth_feature_advertiser}
 - {id: bluetooth_feature_sm}
 - {id: BGM220PC22WGA}
 - {id: mpu}
 - {id: iostream_usart_core}
-- {id: bluetooth_feature_system}
 - {id: gatt_configuration}
-- instance: [BME680]
-  id: i2cspm
-- {id: bluetooth_feature_scanner}
 - instance: [LED0]
   id: simple_led
 - {id: bluetooth_stack}
+- {id: rail_util_pti}
+- {id: ustimer}
+- {id: bluetooth_feature_gatt}
+- {id: app_log}
+- instance: [myUART]
+  id: uartdrv_usart
+- instance: [PB04, blueLED, gpio, greenLED]
+  id: emlib_gpio_simple_init
+- {id: bluetooth_feature_connection}
+- {id: bluetooth_feature_advertiser}
+- instance: [usart]
+  id: iostream_usart
+- {id: bluetooth_feature_system}
+- {id: bluetooth_feature_scanner}
+- instance: [BME680, inst1]
+  id: i2cspm
 - {id: component_catalog}
 - {id: ota_dfu}
+- instance: [mySPI]
+  id: spidrv
 - {id: bootloader_interface}
-- {id: rail_util_pti}
 - {id: app_assert}
-- {id: bluetooth_feature_gatt}
 other_file:
 - {path: create_bl_files.bat}
 - {path: create_bl_files.sh}

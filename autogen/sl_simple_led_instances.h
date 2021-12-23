@@ -19,9 +19,13 @@
 #define SL_SIMPLE_LED_INSTANCES_H
 
 #include "sl_simple_led.h"
- 
+
 extern const sl_led_t sl_led_led0;
 
+extern const sl_led_t *sl_simple_led_array[];
+
+#define SL_SIMPLE_LED_COUNT 1
+#define SL_SIMPLE_LED_INSTANCE(n) (sl_simple_led_array[n])
 
 void sl_simple_led_init_instances(void);
 

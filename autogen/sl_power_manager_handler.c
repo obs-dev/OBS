@@ -3,6 +3,8 @@
 #include "sl_power_manager.h"
 #include "sl_sleeptimer.h"
 #include "sl_bluetooth.h"
+#include "sl_iostream_init_usart_instances.h"
+#include "uartdrv.h"
 
 /***************************************************************************//**
  * Check if the MCU can sleep at that time. This function is called when the system
@@ -75,11 +77,26 @@ bool sl_power_manager_sleep_on_isr_exit(void)
   bool force_wakeup = false;
    
   // This function allow the power manager to return into sleep, if the latest timer 
-  // to expire was power manager's internal one used to restore HFXO on time. 
+  // to expire was power manager's internal one used to restore HFXO on time or 
+  // the HFXO interrupt. 
   // Most of the time we want to get back to sleep until the next event occurs.
-  sleep = sl_sleeptimer_is_power_manager_early_restore_timer_latest_to_expire();
+  sleep = sl_power_manager_is_latest_wakeup_internal();
 
   answer = sli_bt_sleep_on_isr_exit();
+  if (answer == SL_POWER_MANAGER_WAKEUP) {
+    force_wakeup = true;
+  } else if (answer == SL_POWER_MANAGER_SLEEP) {
+    sleep = true;
+  }
+
+  answer = sl_iostream_usart_usart_sleep_on_isr_exit();
+  if (answer == SL_POWER_MANAGER_WAKEUP) {
+    force_wakeup = true;
+  } else if (answer == SL_POWER_MANAGER_SLEEP) {
+    sleep = true;
+  }
+
+  answer = sl_uartdrv_sleep_on_isr_exit();
   if (answer == SL_POWER_MANAGER_WAKEUP) {
     force_wakeup = true;
   } else if (answer == SL_POWER_MANAGER_SLEEP) {

@@ -6,6 +6,7 @@
     <file name="RTE_Components.h" builtin="true" generated="true" uri="studio:/project/autogen/RTE_Components.h"/>
     <file name="sl_component_catalog.h" builtin="true" generated="true" uri="studio:/project/autogen/sl_component_catalog.h"/>
     <file name="sl_device_init_clocks.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_device_init_clocks.c"/>
+    <file name="sl_emlib_gpio_simple_init.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_emlib_gpio_simple_init.c"/>
     <file name="sl_event_handler.h" builtin="true" generated="true" uri="studio:/project/autogen/sl_event_handler.h"/>
     <file name="sl_event_handler.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_event_handler.c"/>
     <file name="sl_i2cspm_init.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_i2cspm_init.c"/>
@@ -13,12 +14,18 @@
     <file name="sl_iostream_handles.h" builtin="true" generated="true" uri="studio:/project/autogen/sl_iostream_handles.h"/>
     <file name="sl_iostream_handles.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_iostream_handles.c"/>
     <file name="sl_iostream_init_instances.h" builtin="true" generated="true" uri="studio:/project/autogen/sl_iostream_init_instances.h"/>
+    <file name="sl_iostream_init_usart_instances.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_iostream_init_usart_instances.c"/>
+    <file name="sl_iostream_init_usart_instances.h" builtin="true" generated="true" uri="studio:/project/autogen/sl_iostream_init_usart_instances.h"/>
     <file name="mbedtls_config_autogen.h" builtin="true" generated="true" uri="studio:/project/autogen/mbedtls_config_autogen.h"/>
     <file name="sl_power_manager_handler.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_power_manager_handler.c"/>
     <file name="psa_crypto_config_autogen.h" builtin="true" generated="true" uri="studio:/project/autogen/psa_crypto_config_autogen.h"/>
     <file name="sl_simple_led_instances.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_simple_led_instances.c"/>
     <file name="sl_simple_led_instances.h" builtin="true" generated="true" uri="studio:/project/autogen/sl_simple_led_instances.h"/>
+    <file name="sl_spidrv_init.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_spidrv_init.c"/>
+    <file name="sl_spidrv_instances.h" builtin="true" generated="true" uri="studio:/project/autogen/sl_spidrv_instances.h"/>
     <file name="linkerfile.ld" builtin="true" generated="true" uri="studio:/project/autogen/linkerfile.ld"/>
+    <file name="sl_uartdrv_init.c" builtin="true" generated="true" uri="studio:/project/autogen/sl_uartdrv_init.c"/>
+    <file name="sl_uartdrv_instances.h" builtin="true" generated="true" uri="studio:/project/autogen/sl_uartdrv_instances.h"/>
   </folder>
   <includePath uri="studio:/project/autogen"/>
 </project>
